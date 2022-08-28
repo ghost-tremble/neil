@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>signup</title>
+</head>
+<body>
+    <div class="logo">
+        <h2>DEUTSCHE</h2>
+    </div>
+        <div class="nav">
+            <a href="#">My Account</a>
+            <a href="#">Log Out</a>
+        </div>
+        
+    
+
+    <div class="form">
+        <form  name="frmone" id="formSign">
+            <label for="FName">First Name:</label>
+            <input type="text" name="FName" id="FName" class="input" required>
+
+            <label for="LName">Last Name:</label>
+            <input type="text" name="LName" id="LName" class="input" required>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" class="input" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone" class="input" required>
+
+            <label for="newpassword">Create password:</label>
+            <input type="password" name="newpassword" id="newpassword" class="input" required>
+
+            <label for="confirmpassword">Confirm password:</label>
+            <input type="password" name="confirmpassword" id="confirmpassword" class="input" required>
+            <input type="submit" value="sign-up" >
+        </form>
+    </div>
+    
+    <script src="./api.js"></script>
+    
+</body>
+</html>
