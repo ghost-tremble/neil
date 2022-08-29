@@ -122,3 +122,54 @@ a:hover{
     color: rgba(0, 0, 0, .7);
     font-size: 2rem;
 }
+
+@media  (max-width: 728px){
+    body{
+        width: 100%;
+        padding-left: 0;
+        /* padding-right: 30px;
+        margin-left: 0; */
+    }
+    
+    .info, .ledger, .loan{
+        width: 90%;
+    height: 20rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+     margin-left: 20px;
+     margin-right: 0px;
+    margin-top: 50px;
+    color: rgba(0, 0, 0, .7);
+    font-size: 2rem;
+
+    }
+
+    .img{
+        /* max-inline-size: 20%; */
+        height: 110px;
+        width: 100px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 90px;
+        margin-right: 0px;
+        padding-right: 10px;
+        padding-bottom:15px;
+        
+    }
+
+    .content{
+        font-size: 1.3rem;
+        text-align: center;
+        margin-right: 110px;
+    }
+
+    img{
+        padding-bottom: 0;
+    }
+
+
+}
