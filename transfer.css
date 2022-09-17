@@ -1,0 +1,15 @@
+a {
+    background-color: #3fd432;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 25px;
+    margin: 20px 2px;
+
+    align-items: center;
+    justify-content: center;
+    block-size: auto;
+    transition: all ease-in-out .6s;
+    border-radius: 5px;
+
+
+}
