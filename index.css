@@ -1,0 +1,248 @@
+/* 
+### Primary
+
+- Dark Blue: hsl(233, 26%, 24%)
+- Lime Green: hsl(136, 65%, 51%)
+- Bright Cyan: hsl(192, 70%, 51%)
+
+### Neutral
+
+- Grayish Blue: hsl(233, 8%, 62%)
+- Light Grayish Blue: hsl(220, 16%, 96%)
+- Very Light Gray: hsl(0, 0%, 98%)
+- White: hsl(0, 0%, 100%) */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .6s linear;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("Simple Shiny.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.nav-items>a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    /* color: hsl(233, 8%, 62%); */
+    color: white;
+    margin-left: 30px;
+}
+
+.nav-items>a:hover {
+    color: hsl(136, 65%, 51%);
+    color: hsl(192, 70%, 51%);
+}
+
+.nav-bar>button {
+    padding: 12px 28px;
+    border: none;
+    outline-width: 0;
+    color: white;
+    border-radius: 24px;
+    cursor: pointer;
+    font-weight: 400;
+    background-image: linear-gradient(120deg,
+            hsl(192, 70%, 51%),
+            hsl(136, 65%, 51%));
+}
+
+.nav-bar>.btnContainer button {
+    background-image: linear-gradient(120deg,
+            hsl(192, 70%, 51%),
+            hsl(136, 65%, 51%));
+    outline: 0;
+    border: 0;
+    margin-right: 10px;
+    cursor: pointer;
+    display: block;
+    padding: 12px 28px;
+    font-size: 10px;
+    border-radius: 24px;
+}
+
+.nav-bar>.btnContainer button a {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.btnContainer {
+    flex-direction: row;
+    display: flex;
+
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+}
+
+.hero-img-container {
+    background-image: url('./images/bg-intro-desktop.svg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding-top: 20px;
+}
+
+.hero-img-container>img {
+    width: 500px;
+}
+
+.hero-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.hero-text-container>h1 {
+    font-size: 70px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    /* color: hsl(233, 26%, 24%); */
+    color: white;
+    line-height: 1.1;
+}
+
+.hero-text-container>p {
+    color: hsl(233, 8%, 62%);
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.hero-text-container>button {
+    padding: 12px 28px;
+    border: none;
+    outline-width: 0;
+    color: white;
+    border-radius: 24px;
+    cursor: pointer;
+    font-weight: 400;
+    background-image: linear-gradient(120deg,
+            hsl(192, 70%, 51%),
+            hsl(136, 65%, 51%));
+}
+
+
+
+@media (max-width: 390px) {
+    body {
+        width: 100%;
+    }
+
+    .nav-bar {
+        width: 90%;
+    }
+
+    .nav-bar>a {
+        font-size: medium;
+    }
+
+
+    .nav-items {
+        width: 80%;
+    }
+
+    .nav-items>a {
+        font-size: .7rem;
+    }
+}
+
+@media all and (max-width:467px) {
+    body {
+        background-position: cover;
+        background-size: cover;
+        width: 100%;
+    }
+
+    .nav-bar {
+        width: 100%;
+
+    }
+
+    .nav-bar>a {
+        font-size: .9rem;
+        padding: 3px 30px;
+        width: 8rem;
+        height: 2rem;
+        justify-content: center;
+        justify-self: center;
+        text-align: center;
+        text-indent: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 7px;
+        border-radius: 6px;
+    }
+
+
+    .nav-items {
+        width: 90%;
+        /* padding: 0 0 0 0; */
+        /* margin-right: 2px; */
+    }
+
+
+
+    .nav-items {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .hero-text-container {
+        width: 80%;
+        font-size: .9rem;
+        justify-self: center;
+    }
+
+    .hero-text-container>h1 {
+        font-size: 1.95rem;
+    }
+}
+
+/* @media  (max-width: 728px) {
+  body{
+    background-position: cover;
+    background-size: cover;
+  }
+  
+  .nav-bar{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav-bar > a{
+    margin-left: 20px;
+    padding: 12px 18px;
+  }
+
+  .nav-items{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .hero-text-container{
+    width: 80%;
+    font-size: .7rem;
+  }
+} */
