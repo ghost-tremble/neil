@@ -1,27 +1,60 @@
- <html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="transfer.css">
+    <link rel="stylesheet" href="style2.css">
     <title>Account</title>
 </head>
-<center>
-<h1>Depositr</h1>
-<form method="Get" action="Check">
-<FONT SIZE="20" FACE="courier" COLOR=blue>
-<body bgcolor="#E7E7EF"><br>
-<table>
-<tr><td><h3>Card No</h3></td><td ><input type=text name="user"></td></tr>
-<tr><td><h3>Card name</h3></td><td ><input type=text name="user"></td></tr>
-<tr><td><h3>SSN</h3></td><td ><input type=password name="user"></td></tr>
-<tr><td><h3>Amount</h3></td><td><input type="text" name="pass"></td></tr>
+<body>
+    <nav>
+        <div class="nav-links" id="navLinks">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="32" height="32" class="fa" onclick="hideMenu()"
+                viewBox="0 0 172 172"
+                style=" fill:#000000; color: black;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M46.86328,39.13672l-7.72656,7.72656l39.13672,39.13672l-39.13672,39.13672l7.72656,7.72656l39.13672,-39.13672l39.13672,39.13672l7.72656,-7.72656l-39.13672,-39.13672l39.13672,-39.13672l-7.72656,-7.72656l-39.13672,39.13672z"></path></g></g></svg>
+            
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                 
+                    <li><a href="account.html">Account</a></li>
+                   
+                </ul>
+            </div>
 
-<tr><th COLSPAN="2">     <div class="btnContainer">      
-                 <a href="./code.html">Send</a>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            width="32" height="32" class="fa" onclick="showMenu()"
+            viewBox="0 0 172 172"
+            style=" fill:#000000; color: black;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M21.5,37.625v10.75h129v-10.75zM21.5,80.625v10.75h129v-10.75zM21.5,123.625v10.75h129v-10.75z"></path></g></g></svg>
+
+    </nav>
+
+  
+    <section class="details">
+        <div class="row">
+            <div class="box column" id="box">
+               
+                <h2 id="username">Captain Maurice Neil</h2>
+                <p>account no. 737214</p>
+                <div class="">
+                    <a href="./international-transfers.html" class="btn">International transfer</a>
+                </div>
+            </div>
+
+               <div class="box column" id="box">
+                   <h2 id="username">Captain Maurice Neil</h2>
+                   <p>account no. 737214</p>
+                   <div class="">
+                    <a href="./local-transfer.html" class="btn">local transfer</a>
+                </div>
+            </div>
+            
+    </section>
     
-        </div></tr>
-</table>
-</center>
+    
+    <script src="get.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>

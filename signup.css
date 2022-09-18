@@ -67,6 +67,17 @@ label{
     font-size: 1.4rem;
 }
 
+input[type="submit"] {
+    display: block;
+    margin-top: 19px;
+    padding: 10px 40px 10px 40px;
+    
+    border: 1px solid #3fd432;
+    outline: none;
+    transition: all ease-in-out .5s;
+    color: #0c4a06;
+    text-decoration: none;
+}
 
 
 input[type="submit"]:hover{
