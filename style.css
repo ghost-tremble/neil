@@ -98,10 +98,10 @@ nav img{
   font-family: 'Germania One', cursive;
   font-size: 50px;
 }
-.text-box p{
-  /* margin: 10px 0 40px;
-  font-size: 14px; */
-} 
+/* .text-box p{
+  margin: 10px 0 40px;
+  font-size: 14px;
+}  */
 
 
 .hero-btn{
@@ -198,11 +198,11 @@ nav .fa{
 }
 
 .nav-bar > .btnContainer button{
-  background-image: linear-gradient(
-    120deg,
-    hsl(192, 70%, 51%),
-    hsl(136, 65%, 51%)
-  );
+    background-image: linear-gradient(
+      120deg,
+      hsl(192, 70%, 51%),
+      hsl(136, 65%, 51%)
+    );
   outline: 0;
   border: 0;
   margin-right:10px;
@@ -353,6 +353,9 @@ nav .fa{
     font-size: 1.95rem;
   }
 } 
+.hero-btn button.btn-trans a{
+  color: #fff;
+}
 
 /* @media  (max-width: 728px) {
   body{

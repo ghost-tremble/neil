@@ -1,100 +1,126 @@
-.contact-col{
-    flex-basis: 48%;
-    margin-bottom: 30px;
-}
-.contact-col div{
+.flex{
     display: flex;
-    margin-bottom: 40px;
-    align-items: flex-start
+    flex-direction: column;
+    padding-bottom: 3%;
 }
-.contact-col div .bi{
-    font-size: 28px;
-    color: rgb(84, 168, 252)    ;
-    margin: 10px;
-    margin-right: 30px;
+.flex input{
+    margin-left: 2%;
+    margin-bottom: 10%;
 }
-.contact-col div p{
-    padding: 0%;
+input{
+    width: 400px;
+padding: 15px;
+margin-bottom: 17px;
+outline: none;
+border: 1px solid #ccc;
+box-sizing: border-box;
+transition: all 0.1s ease;
 }
-.contact-col div h5{
-    font-size: 20px;
-    margin-bottom: 5px;
-    color: #555;
-    font-weight: 400;
+input:focus{
+border: 2px solid #47db53;
 }
-.contact-col input, .contact-col textarea{
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 17px;
-    outline: none;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    transition: all 0.1s ease;
+label{
+margin: 0.6rem 0;
+line-height: 1.25;
+font-weight: 400;
+text-transform: capitalize;
 }
-.contact-col input:hover{
-    border: 2px solid #47db53;
-}
-.transfer-form{
+.top{
+    margin-top: 3%;
     display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-top: 60px;
+    align-self: center;
 }
-.fr p{
-    margin-right: 20px;
-    float: left;
-    text-align: left;
-    font-size: 20px;
-    font-family: sans-serif;
+.top1{
+    margin-top: 3%;
+    display: flex;
+    align-self: center;
 }
-.fr{
+.top2{
+    margin-top: 3%;
+    display: flex;
+    align-self: center;
+}
+#flex{
+    padding-right: 10%;
+}
+.hold{
     display: flex;
     flex-direction: column;
 }
+.body a{
+border: 1px solid black;
+padding: 2% 5% 2% 5%;
+color: black;
+transition: all .5s ease-in-out;
+}
+.body a:hover{
+border: 2px solid #ffffff;
+background-color: #47db53;
+color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 800px){
 
-.btn{
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    border:  1px solid white;
-    padding: 12px 34px;
-    border-radius: 5px;
-    font-size: 13px;
-    background: #437447;;
-    cursor: pointer;
-    margin-top: 30px;
-    transition: all 0.5s ease;
+input{
+    width: 370px;
 }
-.btn:hover{
-    transition: all 0.5s ease;
-    background:transparent;
-    color: #437447;
-    border: 1px solid #437447;
-}
-
-@media(max-width: 500px){
-    .contact-col input{
-        width: 150%;
-        margin-left: -50px;
-        margin-top: 15px;
-        padding: 15px;
-        margin-bottom: 17px;
-        outline: none;
-        border: 1px solid #ccc;
-        box-sizing: border-box;
-        transition: all 0.1s ease;
-    }
-}
-
-.form input, .contact-col textarea{
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 17px;
-    outline: none;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    transition: all 0.1s ease;
-}
-.form input:hover{
+input:focus{
     border: 2px solid #47db53;
+}
+label{
+    margin: 0.6rem 0;
+    line-height: 1.25;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.body{
+    margin-top: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.top{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+.top1{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+.top2{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+}
+@media screen and (max-width: 600px){
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    width: 300px;
+}
+}
+@media screen and (max-width: 600px){
+input{
+    width: 250px;
+}
+}
+.hold a{
+    border: 1px solid black;
+    padding: 2% 5% 2% 5%;
+    color: black;
+    transition: all .5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    margin: 0 10% 10% 10%;
+}
+.hold a:hover{
+    border: 2px solid #ffffff;
+    background-color: #47db53;
+    color: rgb(255, 255, 255);
 }

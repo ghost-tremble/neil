@@ -5,9 +5,9 @@ var frontend_url = window.location.origin;
 
 let password = document.getElementById("password");
 let email = document.getElementById("email");
-
-
-
+let loginBtn = document.getElementById("login");
+let loader = document.getElementById("loader");
+let error = document.getElementById("error");
 async function postData(url = "", data = {}) {
   // Default options are marked with *
   const response = await fetch(url, {
@@ -21,8 +21,9 @@ async function postData(url = "", data = {}) {
   return response.json(); // parses JSON response into native JavaScript objects
 }
 
-form.addEventListener("submit", (e) => {
+loginBtn.addEventListener("click", (e) => {
   e.preventDefault();
+  loader.style.display = "block"
   const data = {
     password: password.value,
     email: email.value,
@@ -34,6 +35,8 @@ form.addEventListener("submit", (e) => {
       document.location.href = `${frontend_url}/account.html`;
     } else {
     console.log(data?.message);
+    error.innerHTML = data?.error
+    loader.style.display = "none";
     }
     console.log(data); // JSON data parsed by `data.json()` call
   });

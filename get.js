@@ -5,7 +5,7 @@ var frontend_url = window.location.origin;
 
 let password = document.getElementById("password");
 let email = document.getElementById("email");
-let username = document.getElementById("name")
+let username = document.getElementById("username")
 
 async function getData(url,token) {
   // Default options are marked with *
@@ -30,7 +30,7 @@ window.addEventListener("load",(e) => {
     console.log(data)
      username.innerHTML = `${data?.data.firstname} ${data?.data.lastname}`
     } else {
-      alert(data?.error);
+      // alert(data?.error);
     }
     console.log(data); // JSON data parsed by `data.json()` call
   });

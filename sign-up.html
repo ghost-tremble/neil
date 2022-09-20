@@ -4,44 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./transfer.css">
+    <link rel="stylesheet" href="./bootstrap-icons/bootstrap-icons.css">'
+    <link rel="stylesheet" href="st.css">
     <title>signup</title>
 </head>
 <body>
-    <div class="logo">
-        <h2>DEUTSCHE</h2>
-    </div>
-        <div class="nav">
-            <a href="#">My Account</a>
-            <a href="#">Log Out</a>
+    <nav class="navbar" style="background-color:hsl(136, 65%, 51%); margin-top: 0%;">
+        <div class="container">
+            <div class="brand-and-toggler">
+                <button type="button" class="navbar-toggler" id="navbar-toggler">
+                    <i class="bi bi-list" style="color: white;"></i>
+                </button>
+            </div>
+
+            <div class="navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link" style="opacity: 1;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link" style="opacity: 1;">Login</a>
+                    </li>
+                  
+                </ul>
+            </div>
+
         </div>
-        
-    
+    </nav>
 
-    <div class="form">
-        <form  name="frmone" id="formSign">
+
+    <h1 style="margin-top:5%; margin-bottom: 5%; text-align:center;">DEUTSCHE</h1>
+<div class="hold">
+    <div class="top">
+        <div class="flex" id="flex">
             <label for="FName">First Name:</label>
-            <input type="text" name="FName" id="FName" class="input" required>
-
-            <label for="LName">Last Name:</label>
-            <input type="text" name="LName" id="LName" class="input" required>
-
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" class="input" required>
-
-            <label for="phone">Phone:</label>
-            <input type="tel" name="phone" id="phone" class="input" required>
-
-            <label for="newpassword">Create password:</label>
-            <input type="password" name="newpassword" id="newpassword" class="input" required>
-
-            <label for="confirmpassword">Confirm password:</label>
-            <input type="password" name="confirmpassword" id="confirmpassword" class="input" required>
-            <input type="submit" value="sign-up" >
-        </form>
+        <input id="FName" type="text" placeholder="Enter First-name">
     </div>
+    <div class="flex">
+        <label for="LName">Last Name:</label>
+        <input id="LName" type="text" placeholder="Enter Last-name">
+    </div>
+    </div>
+    <div class="top1">
+        <div class="flex" id="flex">
+            <label for="email">Email:</label>
+        <input id="email" type="email" placeholder="Enter Email">
+    </div>
+    <div class="flex">
+        <label for="phone">Phone:</label>
+        <input type="number" placeholder="Enter Phone">
+    </div>
+    </div>
+    <div class="top2">
+        <div class="flex" id="flex">
+        <label for="newpassword">Create password:</label>
+        <input id="newpassword" type="password" placeholder="Enter Password">
+    </div>
+    <div class="flex">
+        <label for="confirmpassword">Confirm password:</label>
+        <input type="password" placeholder="Confirm Password">
+    </div>
+    </div>
+    
+            <img  style="margin-Top: 10px; display: none;" id="loader" height="20px" width="20px"src="./three-dots.svg">
+    <!-- error -->
+        <p id="error" style="color: red; margin:5px;text-align: center;"></p>   
+    <a style="cursor: pointer;" id="login">Create New Account</a>
+</div> 
+
+
     
     <script src="./api.js"></script>
-    
+    <script src="jquery.js"></script>
+<script src="./sc.js"></script>
 </body>
 </html>

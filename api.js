@@ -7,7 +7,9 @@ let firstname =  document.getElementById("FName");
 let lastname=document.getElementById("LName");
 let password= document.getElementById("newpassword");
 let email = document.getElementById("email");
-
+let signUpBtn = document.getElementById("login");
+let loader = document.getElementById("loader");
+let error = document.getElementById("error");
 
 console.log(frontend_url)
 
@@ -26,7 +28,8 @@ async function postData(url='', data = {}) {
 
 
 
-form.addEventListener("submit",(e)=>{
+signUpBtn.addEventListener("click",(e)=>{
+    loader.style.display = "block";
     e.preventDefault()
     const data = {
     firstname:firstname.value,lastname:lastname.value,password:password.value,email:email.value
@@ -36,7 +39,8 @@ postData(baseUrl,data).then((data) => {
         document.location.href = `${frontend_url}/login.html`;
     }
     else {
-        alert(data?.message)
+          error.innerHTML = data?.error;
+          loader.style.display = "none";
     }
   console.log(data); // JSON data parsed by `data.json()` call
 });

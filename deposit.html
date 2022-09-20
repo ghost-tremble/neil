@@ -4,58 +4,105 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="./bootstrap-icons/bootstrap-icons.css">'
+    <link rel="stylesheet" href="st.css">
     <title>Account</title>
+
+<style>
+    .rows{
+        display: flex;
+        flex-direction: column; 
+        align-items: center
+    }
+    .body{
+        border: 0px solid black;
+        padding: 7% 16% 7% 16%;
+        margin: 5%;
+        line-height: 245%;
+        box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+    }
+    .items p{
+        font-size: 22px;
+    }
+    .items h3{
+        font-size: 35px;
+    }
+    .items a{
+        font-size: 15px;
+        border: 1px solid black;
+        padding: 2% 5% 2% 5%;
+        color: black;
+        transition: all .5s ease-in-out;
+        display: flex;
+        justify-content: center;
+        margin: 20% 10% 0% 10%;
+    }
+    .items a:hover{
+        border: 2px solid #ffffff;
+        background-color: #47db53;
+        color: rgb(255, 255, 255);
+    }
+
+</style>
 </head>
 <body>
-    <nav>
-        <div class="nav-links" id="navLinks">
-                
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                width="32" height="32" class="fa" onclick="hideMenu()"
-                viewBox="0 0 172 172"
-                style=" fill:#000000; color: black;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M46.86328,39.13672l-7.72656,7.72656l39.13672,39.13672l-39.13672,39.13672l7.72656,7.72656l39.13672,-39.13672l39.13672,39.13672l7.72656,-7.72656l-39.13672,-39.13672l39.13672,-39.13672l-7.72656,-7.72656l-39.13672,39.13672z"></path></g></g></svg>
-            
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                 
-                    <li><a href="account.html">Account</a></li>
+
+
+    <nav class="navbar" style="background-color:hsl(136, 65%, 51%); margin-top: 0%;">
+        <div class="container">
+            <div class="brand-and-toggler">
+                <button type="button" class="navbar-toggler" id="navbar-toggler">
+                    <i class="bi bi-list" style="color: white;"></i>
+                </button>
+            </div>
+
+            <div class="navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="./index1.html" class="nav-link" style="opacity: 1;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link" style="opacity: 1;">Logout</a>
+                    </li>
                    
                 </ul>
             </div>
 
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-            width="32" height="32" class="fa" onclick="showMenu()"
-            viewBox="0 0 172 172"
-            style=" fill:#000000; color: black;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M21.5,37.625v10.75h129v-10.75zM21.5,80.625v10.75h129v-10.75zM21.5,123.625v10.75h129v-10.75z"></path></g></g></svg>
-
+        </div>
     </nav>
 
-  
+
+
     <section class="details">
-        <div class="row">
-            <div class="box column" id="box">
-               
-                <h2 id="username">Captain Maurice Neil</h2>
+        <div class="title">
+            <h1 style="font-size: 40px;">Make a deposit</h1>
+            <h3 style="font-size: 18px;">You can make transfer from Your local and International Account</h5>
+        </div>
+        <div class="rows">
+            <div class="body">
+                <div class="items">
+                <h3>Captain Maurice Neil</h3>
                 <p>account no. 737214</p>
-                <div class="
-                ">
-                    <a href="./international-transfers.html" class="btn">International transfer</a>
+                <a href="./international-transfers.html">International transfer</a>
                 </div>
+
             </div>
 
-               <div class="box column" id="box">
-                   <h2 id="username">Captain Maurice Neil</h2>
-                   <p>account no. 737214</p>
-                   <div class="">
-                    <a href="./local-transfer.html" class="btn">local transfer</a>
+            <div class="body">
+                <div class="items">
+                <h3>Captain Maurice Neil</h3>
+                <p>account no. 737214</p>
+                <a href="./local-transfer.html">Local transfer</a>
                 </div>
+                
             </div>
+        </div>
             
     </section>
     
     
     <script src="get.js"></script>
-    <script src="./script.js"></script>
+    <script src="jquery.js"></script>
+<script src="./sc.js"></script>
 </body>
 </html>
